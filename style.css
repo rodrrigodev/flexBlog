@@ -8,7 +8,8 @@
     --pattern-size: 60rem;
     --pattern-margin: 0 auto;
     --pattern-gap: 0.625rem;
-    --pattern-padding: 0.625rem
+    --pattern-padding: 0.625rem;
+    --pattern-blue: #122AB2;
 }
 
 body{
@@ -36,7 +37,7 @@ a{
 }
 
 .location-container{
-    background-color: #122AB2;
+    background-color: var(--pattern-blue);
     color: white;
 }
 
@@ -87,5 +88,45 @@ a{
 }
 
 .nav-links a:hover{
-    color: #122AB2;
+    color: var(--pattern-blue);
+}
+
+.main-prop{
+    margin: var(--pattern-margin);
+    max-width: var(--pattern-size);
+    padding: 3.75rem 0.625rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.about-container{
+    max-width: var(--pattern-size);
+    margin: var(--pattern-margin);
+    border-top: 0.125rem solid var(--pattern-blue);
+    border-bottom: 0.125rem solid var(--pattern-blue);
+    margin: var(--pattern-margin);
+    padding: 3.75rem 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-info{
+    flex: 2 1 18.75rem;
+}
+
+.about-info h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-info p{
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #7c7c7c;
+}
+
+.about-img{
+   flex: 1 1 10rem;
 }
